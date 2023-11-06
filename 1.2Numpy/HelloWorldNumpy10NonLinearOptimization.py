@@ -14,9 +14,9 @@ a0 = np.array([2, 4])
 
 y = a[0] * x + a[1] * x * np.sin(2 * x)
 
-y_inicial = a0[0] * x + a0[1] * x * np.sin(2 * x)
+y_initial = a0[0] * x + a0[1] * x * np.sin(2 * x)
 plt.plot(x, y, 'k', label='Original data')
-plt.plot(x, y_inicial, 'r', label='Inicial Model')
+plt.plot(x, y_initial, 'r', label='Initial Model')
 plt.title('Starting point')
 plt.legend()
 plt.show()
