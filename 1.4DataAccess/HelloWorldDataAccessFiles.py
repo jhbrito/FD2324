@@ -36,6 +36,8 @@ with open("list_of_files.data", "rb") as fp:
     print("Loading list_of_files")
     list_of_files = pickle.load(fp)
 
+os.remove("list_of_files.data")
+
 new_folder = os.path.join(folder, 'Copies')
 if not os.path.exists(new_folder):
     os.mkdir(new_folder)
@@ -94,3 +96,10 @@ with open(os.path.join(folder, "var_dict.json"), "w") as fp:
 with open(os.path.join(folder, "var_dict.json"), "r") as data_file:
     var2 = json.load(data_file)
 print(var2)
+
+os.remove(os.path.join(folder, "var_int.json"))
+os.remove(os.path.join(folder, "var_float.json"))
+os.remove(os.path.join(folder, "var_string.json"))
+os.remove(os.path.join(folder, "var_tuple.json"))
+os.remove(os.path.join(folder, "var_list.json"))
+os.remove(os.path.join(folder, "var_dict.json"))
