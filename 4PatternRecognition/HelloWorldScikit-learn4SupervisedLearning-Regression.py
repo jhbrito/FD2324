@@ -13,7 +13,6 @@ from numpy.random import default_rng
 
 rng = default_rng(1)
 
-
 n_samples = 100
 mean_samples = 20.0
 std_samples = 5.0
